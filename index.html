@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vanilla JS Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="calculator">
+        <div class="display">
+          <input
+            readonly
+            maxlength="10"
+            class="display-input"
+            id="display-input"
+            value="0"
+          />
+        </div>
+        <div class="keypad">
+          <button
+            type="button"
+            class="beige"
+            value="CE"
+            data-action="cancel-entry"
+          >
+            CE
+          </button>
+          <button type="button" class="beige" value="/" data-action="operator">
+            &#247;
+          </button>
+          <button type="button" class="beige" value="*" data-action="operator">
+            x
+          </button>
+          <input type="checkbox" class="const-chain" />
+          <button type="button" class="white" value="7" data-action="number">
+            7
+          </button>
+          <button type="button" class="white" value="8" data-action="number">
+            8
+          </button>
+          <button type="button" class="white" value="9" data-action="number">
+            9
+          </button>
+          <button type="button" class="beige" value="C" data-action="clear">
+            C
+          </button>
+          <button type="button" class="white" value="4" data-action="number">
+            4
+          </button>
+          <button type="button" class="white" value="5" data-action="number">
+            5
+          </button>
+          <button type="button" class="white" value="6" data-action="number">
+            6
+          </button>
+          <button type="button" class="beige" value="-" data-action="operator">
+            -
+          </button>
+          <button type="button" class="white" value="1" data-action="number">
+            1
+          </button>
+          <button type="button" class="white" value="2" data-action="number">
+            2
+          </button>
+          <button type="button" class="white" value="3" data-action="number">
+            3
+          </button>
+          <button type="button" class="beige" value="+" data-action="operator">
+            +
+          </button>
+          <button
+            type="button"
+            class="white wide"
+            value="0"
+            data-action="number"
+          >
+            0
+          </button>
+          <button type="button" class="white" value="." data-action="number">
+            .
+          </button>
+          <button
+            type="button"
+            class="orange wide"
+            value="="
+            data-action="evaluate"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
